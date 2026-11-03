@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#141413">
+  <meta name="description" content="Бурмалдастрижка — демонстрационный сайт барбершопа. Мужские стрижки, борода, мастера своего дела и немного хорошей наглости.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Бурмалдастрижка — стрижём как надо">
+  <meta property="og:description" content="Сложное название. Просто хорошая стрижка. Демонстрационный сайт вымышленного барбершопа.">
+  <meta property="og:image" content="./assets/hero.jpg">
+  <title>Бурмалдастрижка — стрижём как надо</title>
+  <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти к содержимому</a>
+  <header class="site-header">
+    <a href="#home" class="brand" aria-label="Бурмалдастрижка — на главную">
+      <svg class="brand-symbol" viewBox="0 0 40 40" aria-hidden="true"><path d="M17 0h6v13l9-9 4 4-9 9h13v6H27l9 9-4 4-9-9v13h-6V27l-9 9-4-4 9-9H0v-6h13L4 8l4-4 9 9z"/></svg>
+      <span>БУРМАЛДА<span>СТРИЖКА<span class="brand-dot">®</span></span></span>
+    </a>
+    <nav class="desktop-nav" aria-label="Основная навигация">
+      <a href="#services">Услуги</a><a href="#approach">Атмосфера</a><a href="#team">Мастера</a><a href="#visit">Как найти</a>
+    </nav>
+    <div class="header-actions"><button class="button button-small" data-book>Записаться <span aria-hidden="true">↗</span></button><button class="menu-toggle" aria-label="Открыть меню" aria-controls="mobile-menu" aria-expanded="false"><span></span><span></span></button></div>
+  </header>
+  <nav id="mobile-menu" class="mobile-menu" aria-label="Мобильная навигация" hidden><a href="#services">Услуги и цены</a><a href="#approach">Атмосфера</a><a href="#team">Мастера</a><a href="#visit">Как найти</a></nav>
+  <main id="main">
+    <section class="hero" id="home" aria-labelledby="hero-heading">
+      <div class="hero-photo"><img src="./assets/hero.jpg" width="1536" height="1024" alt="Барбер аккуратно завершает мужскую стрижку машинкой" fetchpriority="high"><div class="photo-shade"></div></div>
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot"></span> МУЖСКАЯ ПАРИКМАХЕРСКАЯ <span class="demo-tag">ДЕМО</span></p>
+        <h1 id="hero-heading">СТРИЖЁМ<br>КАК <span class="outline-word">НАДО.</span></h1>
+        <p class="hero-description">Сложное название.<br>Просто хорошая стрижка.</p>
+        <button class="button hero-button" data-book>Занять кресло <span aria-hidden="true">↗</span></button>
+        <a class="hero-secondary" href="#services">Посмотреть цены <span aria-hidden="true">↓</span></a>
+      </div>
+      <div class="hero-sticker" aria-hidden="true"><span>ЗАХОДИ,</span><span>ОБРАСТАЕШЬ.</span><svg viewBox="0 0 64 30"><path d="M2 15h55M44 2l14 13-14 13" fill="none" stroke="currentColor" stroke-width="3"/></svg></div>
+      <div class="hero-bottom"><span>СТРИЖКИ / БОРОДЫ / ХАРАКТЕР</span><a href="#services" aria-label="Далее к услугам">ЛИСТАЙ НИЖЕ <span aria-hidden="true">↓</span></a></div>
+      <span class="vertical-caption" aria-hidden="true">ХОРОШО ВЫГЛЯДЕТЬ — ХОРОШАЯ ПРИВЫЧКА</span>
+    </section>
+    <div class="statement-strip" aria-hidden="true"><span>ТВОЯ ГОЛОВА.</span><svg viewBox="0 0 40 40"><path d="M17 0h6v13l9-9 4 4-9 9h13v6H27l9 9-4 4-9-9v13h-6V27l-9 9-4-4 9-9H0v-6h13L4 8l4-4 9 9z"/></svg><span>НАШЕ ДЕЛО.</span><svg viewBox="0 0 40 40"><path d="M17 0h6v13l9-9 4 4-9 9h13v6H27l9 9-4 4-9-9v13h-6V27l-9 9-4-4 9-9H0v-6h13L4 8l4-4 9 9z"/></svg><span>ТВОЙ СТИЛЬ.</span></div>
+    <section class="services section-light section-pad" id="services" aria-labelledby="services-heading">
+      <div class="section-intro"><p class="eyebrow red-text">01 / ЧТО ДЕЛАЕМ</p><h2 id="services-heading">ВЫБИРАЙ.<br>ОСТАЛЬНОЕ<br><span class="muted-heading">ЗА НАМИ.</span></h2><p>Сначала обсудим, что тебе нравится.<br>Потом сделаем так, чтобы нравилось ещё больше.</p><span class="small-note">Пример цен для демонстрации сайта.</span></div>
+      <div class="service-list">
+        <button class="service-row" data-book data-service="haircut"><span class="service-number">01</span><span class="service-info"><strong>Мужская стрижка</strong><span>Форма, мытьё и укладка · 60 мин</span></span><span class="service-price">1 800 ₽</span><span class="service-arrow" aria-hidden="true">↗</span></button>
+        <button class="service-row" data-book data-service="beard"><span class="service-number">02</span><span class="service-info"><strong>Борода и усы</strong><span>Чёткий контур и уход · 30 мин</span></span><span class="service-price">1 000 ₽</span><span class="service-arrow" aria-hidden="true">↗</span></button>
+        <button class="service-row service-highlight" data-book data-service="combo"><span class="service-number">03</span><span class="service-info"><span class="service-label">ВЕСЬ КОМПЛЕКТ</span><strong>Стрижка + борода</strong><span>Полный порядок · 90 мин</span></span><span class="service-price">2 500 ₽</span><span class="service-arrow" aria-hidden="true">↗</span></button>
+        <button class="service-row" data-book data-service="clipper"><span class="service-number">04</span><span class="service-info"><strong>Под машинку</strong><span>Коротко и по делу · 30 мин</span></span><span class="service-price">800 ₽</span><span class="service-arrow" aria-hidden="true">↗</span></button>
+      </div>
+    </section>
+    <section class="approach section-pad" id="approach" aria-labelledby="approach-heading">
+      <div class="approach-visual"><img src="./assets/hero.jpg" width="1536" height="1024" loading="lazy" alt="Рабочий момент в интерьере концептуального барбершопа"><span class="image-label">ДЕТАЛИ РЕШАЮТ.</span><span class="visual-corner" aria-hidden="true">Б.</span></div>
+      <div class="approach-copy"><p class="eyebrow red-text">02 / МЕСТО СВОИХ</p><h2 id="approach-heading">РАССЛАБЬСЯ.<br>ТЫ В <em>КРЕСЛЕ.</em></h2><p class="large-copy">Выдохнуть. Выпить кофе.<br>Привести мысли и волосы в порядок.</p><p>Здесь можно обсудить всё на свете. Или просто помолчать под хорошую музыку. Мы за удобное кресло, внимание к деталям и стрижку, с которой легко жить каждый день.</p><div class="approach-details"><div><span>01</span><strong>Сначала слушаем</strong><p>Подбираем форму под твои волосы, привычки и настроение.</p></div><div><span>02</span><strong>Доводим до конца</strong><p>Покажем результат со всех сторон и объясним, как укладывать дома.</p></div></div></div>
+    </section>
+    <section class="team section-pad" id="team" aria-labelledby="team-heading">
+      <div class="section-heading"><div><p class="eyebrow red-text">03 / РУКИ И ХАРАКТЕРЫ</p><h2 id="team-heading">СВОЙ МАСТЕР<br><span class="muted-heading">НАЙДЁТСЯ.</span></h2></div><p>Разный почерк. Одинаковое внимание к деталям.<br><span class="small-note">Персонажи придуманы для этого демо.</span></p></div>
+      <div class="master-grid">
+        <article class="master-card master-one"><div class="master-topline"><span>БАРБЕР / 01</span><span aria-hidden="true">✳</span></div><div class="master-art" aria-hidden="true"><svg viewBox="0 0 300 220"><circle cx="153" cy="100" r="76"/><path d="M62 216c4-54 37-83 90-83s86 29 90 83"/><path class="line" d="M102 86c3-31 31-52 55-50 29 1 46 24 49 50M112 105h22m35 0h22m-52 32c11 9 24 9 36 0"/><path class="accent" d="M100 68l23-40 22 11 24-13 32 40-48-17z"/></svg><span class="master-monogram">М.</span></div><div class="master-content"><h3>МАКС</h3><p>Фейды, текстура и точная геометрия.<br>Для тех, кто любит почётче.</p><button class="text-button" data-book data-master="max">Выбрать Макса <span aria-hidden="true">↗</span></button></div></article>
+        <article class="master-card master-two"><div class="master-topline"><span>БАРБЕР / 02</span><span aria-hidden="true">✳</span></div><div class="master-art" aria-hidden="true"><svg viewBox="0 0 300 220"><circle cx="150" cy="96" r="76"/><path d="M58 216c8-56 40-84 92-84s84 28 92 84"/><path class="line" d="M112 100h22m32 0h22M104 122c9 46 75 54 92 0M128 126h43"/><path class="accent" d="M93 79c-2-65 114-77 113 0-18-24-30-10-47-22-16 19-40-1-66 22"/></svg><span class="master-monogram">С.</span></div><div class="master-content"><h3>САНЯ</h3><p>Классика, бороды и спокойный темп.<br>Любит, когда всё на своём месте.</p><button class="text-button" data-book data-master="sanya">Выбрать Саню <span aria-hidden="true">↗</span></button></div></article>
+        <article class="master-card master-three"><div class="master-topline"><span>БАРБЕР / 03</span><span aria-hidden="true">✳</span></div><div class="master-art" aria-hidden="true"><svg viewBox="0 0 300 220"><circle cx="149" cy="99" r="76"/><path d="M58 216c6-55 37-84 91-84s87 29 93 84"/><path class="line" d="M110 102h24m32 0h24m-59 31c9 9 24 12 38-1"/><path class="accent" d="M90 81l8-30 17-23 22 10 28-22 20 21 26 32-37-14-27 10-28-9z"/></svg><span class="master-monogram">Д.</span></div><div class="master-content"><h3>ДЭН</h3><p>Длина, естественная форма и движение.<br>Если хочется попробовать новое.</p><button class="text-button" data-book data-master="dan">Выбрать Дэна <span aria-hidden="true">↗</span></button></div></article>
+      </div>
+    </section>
+    <section class="booking-banner"><div><p class="eyebrow">ДЕЛО ЗА МАЛЫМ</p><h2>ХВАТИТ РАСТИ.<br>ПОРА СТРИЧЬСЯ.</h2></div><button class="button button-dark" data-book>Выбрать время <span aria-hidden="true">↗</span></button><span class="banner-symbol" aria-hidden="true">✳</span></section>
+    <section class="visit section-light section-pad" id="visit" aria-labelledby="visit-heading"><div><p class="eyebrow red-text">04 / ЗАГЛЯДЫВАЙ</p><h2 id="visit-heading">ТАМ, ГДЕ<br>ТЕБЯ <span class="muted-heading">ЖДУТ.</span></h2><p class="visit-intro">В настоящем проекте здесь будут адрес,<br>карта и контакты твоего барбершопа.</p></div><div class="visit-info"><div class="contact-row"><span>АДРЕС В МАКЕТЕ</span><strong>Улица Хороших Стрижек, 7</strong><p>Вымышленный адрес · не для навигатора</p></div><div class="contact-row"><span>ЧАСЫ РАБОТЫ В МАКЕТЕ</span><strong>Ежедневно · 10:00–21:00</strong></div><button class="text-button dark-text" data-book>Посмотреть демо-запись <span aria-hidden="true">↗</span></button></div></section>
+  </main>
+  <footer><a class="footer-wordmark" href="#home" aria-label="Бурмалдастрижка — наверх">БУРМАЛДАСТРИЖКА<span aria-hidden="true">↗</span></a><div class="footer-bottom"><p>КОНЦЕПТ БАРБЕРШОПА · <span id="year">2026</span></p><p>Демонстрационный сайт. Услуги, мастера и адрес вымышлены.</p><button class="footer-button" id="about-demo">О демо</button></div></footer>
+  <dialog id="booking-dialog" class="booking-dialog" aria-labelledby="booking-title"><button class="dialog-close" aria-label="Закрыть окно записи" data-close-dialog>×</button><div id="booking-main"><p class="eyebrow red-text">ТВОЁ КРЕСЛО ЖДЁТ</p><h2 id="booking-title">ЗАПИШЕМСЯ?</h2><p class="dialog-description">Попробуй выбрать услугу, мастера и время.</p><div class="demo-notice"><span aria-hidden="true">↗</span><p><strong>Это демонстрация.</strong> Расписание условное. Заявка никуда не отправляется, настоящая бронь не создаётся.</p></div><form id="booking-form"><label for="service">Услуга</label><select id="service" name="service"><option value="haircut">Мужская стрижка — 1 800 ₽ · 60 мин</option><option value="beard">Борода и усы — 1 000 ₽ · 30 мин</option><option value="combo">Стрижка + борода — 2 500 ₽ · 90 мин</option><option value="clipper">Под машинку — 800 ₽ · 30 мин</option></select><label for="master">Мастер</label><select id="master" name="master"><option value="any">Любой мастер</option><option value="max">Макс — фейды и текстура</option><option value="sanya">Саня — классика и бороды</option><option value="dan">Дэн — длина и форма</option></select><label for="date">Дата</label><input type="date" id="date" name="date" required><fieldset class="time-fieldset"><legend>Время <span>· пример расписания</span></legend><div class="time-slots" id="time-slots"></div></fieldset><p id="booking-error" class="form-error" role="alert" hidden></p><div class="booking-total"><span id="duration-summary">60 минут</span><strong id="price-summary">1 800 ₽</strong></div><button type="submit" class="button button-full">Проверить демо-запись <span aria-hidden="true">↗</span></button><p class="privacy-note">Имя и телефон не нужны. Мы не собираем персональные данные.</p></form></div><div id="booking-success" hidden><span class="success-mark" aria-hidden="true">✓</span><p class="eyebrow red-text">ВСЁ СХОДИТСЯ</p><h2 id="success-title">ВОТ ТВОЙ<br>ПЛАН.</h2><p class="dialog-description">Так выглядело бы подтверждение записи.</p><dl id="booking-details" class="booking-details"></dl><div class="demo-notice"><p>Это демо: время не зарезервировано, посещение не запланировано.</p></div><button class="button button-full" id="restart-booking">Изменить выбор <span aria-hidden="true">↗</span></button></div></dialog>
+  <dialog id="demo-dialog" class="booking-dialog info-dialog" aria-labelledby="demo-title"><button class="dialog-close" aria-label="Закрыть информацию" data-close-dialog>×</button><p class="eyebrow red-text">СДЕЛАНО ДЛЯ ПОРТФОЛИО</p><h2 id="demo-title">ЭТО КОНЦЕПТ.</h2><p>«Бурмалдастрижка» — вымышленный барбершоп. Названия услуг, цены, мастера и адрес служат примером наполнения сайта.</p><p>Форма показывает сценарий записи, но не отправляет заявки и не бронирует время. Персональные данные не запрашиваются. Иллюстративное фото создано с помощью ИИ.</p><button class="button button-full" data-close-dialog>Понятно <span aria-hidden="true">↗</span></button></dialog>
+  <noscript><div class="noscript-note">Для демонстрации записи включи JavaScript. Услуги и цены доступны выше.</div></noscript>
+</body>
+</html>

@@ -1,0 +1,10 @@
+{
+  "name": "burmaldastrizhka",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Демонстрационный сайт барбершопа Бурмалдастрижка",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "check": "node --check app.js && node scripts/check.mjs"
+  }
+}
